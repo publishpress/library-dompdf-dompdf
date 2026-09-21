@@ -1,6 +1,6 @@
 {
     "name": "publishpress/dompdf-dompdf",
-    "version": "3.1.6.1",
+    "version": "3.1.6.2",
     "type": "library",
     "description": "Dompdf and its runtime dependencies, prefixed for PublishPress",
     "keywords": [

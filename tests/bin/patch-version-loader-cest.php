@@ -10,16 +10,7 @@ if ($contents === false) {
 $from = "class_exists('PublishPress\\Dompdf\\Dompdf', false)";
 $to = "class_exists('PublishPress\\Dompdf\\Dompdf')";
 
-// The generator adds sample historical versions used by its fixture setup.
-// This lightweight suite registers only this package's real build.
-$contents = preg_replace(
-    "/^\s*'2\\.0\\.0\\.[12]'.*\R/m",
-    '',
-    $contents
-);
-
 if (strpos($contents, $from) === false) {
-    file_put_contents($cest, $contents);
     exit(0);
 }
 
