@@ -5,6 +5,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## Unreleased
 
+## [3.1.6.3] - 2026-09-21
+
 - Fixed: Drop unused Masterminds HTML5 `bin/entities.php` generator (unprefixed namespace + outbound HTTP).
 
 ## [3.1.6.2] - 2026-09-21

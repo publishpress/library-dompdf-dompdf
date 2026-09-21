@@ -16,7 +16,7 @@ if (! function_exists('add_action')) {
     return;
 }
 
-if (! function_exists(__NAMESPACE__ . '\register3Dot1Dot6Dot2')) {
+if (! function_exists(__NAMESPACE__ . '\register3Dot1Dot6Dot3')) {
     if (! defined('PUBLISHPRESS_DOMPDF_DOMPDF_INCLUDED')) {
         define('PUBLISHPRESS_DOMPDF_DOMPDF_INCLUDED', __DIR__);
     }
@@ -33,17 +33,17 @@ if (! function_exists(__NAMESPACE__ . '\register3Dot1Dot6Dot2')) {
         add_action('plugins_loaded', [VersionLoader::class, 'initializeLatestVersion'], -185, 0);
     }
 
-    add_action('plugins_loaded', __NAMESPACE__ . '\register3Dot1Dot6Dot2', -200, 0);
+    add_action('plugins_loaded', __NAMESPACE__ . '\register3Dot1Dot6Dot3', -200, 0);
 
-    function register3Dot1Dot6Dot2()
+    function register3Dot1Dot6Dot3()
     {
         if (! class_exists('PublishPress\Dompdf\Dompdf', false)) {
             $loader = VersionLoader::getInstance();
-            $loader->register('3.1.6.2', __NAMESPACE__ . '\initialize3Dot1Dot6Dot2');
+            $loader->register('3.1.6.3', __NAMESPACE__ . '\initialize3Dot1Dot6Dot3');
         }
     }
 
-    function initialize3Dot1Dot6Dot2()
+    function initialize3Dot1Dot6Dot3()
     {
         if (! class_exists('PublishPress\Dompdf\Dompdf', false)
             && ! class_exists('ComposerAutoloaderInit69614d9874cf9b1326ad13fed6342e0a', false)
@@ -51,9 +51,9 @@ if (! function_exists(__NAMESPACE__ . '\register3Dot1Dot6Dot2')) {
             require_once __DIR__ . '/autoload.php';
         }
         if (! defined('PUBLISHPRESS_DOMPDF_DOMPDF_VERSION')) {
-            define('PUBLISHPRESS_DOMPDF_DOMPDF_VERSION', '3.1.6.2');
+            define('PUBLISHPRESS_DOMPDF_DOMPDF_VERSION', '3.1.6.3');
         }
 
-        do_action('publishpress_dompdf_dompdf_3Dot1Dot6Dot2_initialized');
+        do_action('publishpress_dompdf_dompdf_3Dot1Dot6Dot3_initialized');
     }
 }

@@ -2,8 +2,8 @@
   'root' => 
   array (
     'name' => 'publishpress/dompdf-dompdf',
-    'pretty_version' => '3.1.6.2',
-    'version' => '3.1.6.2',
+    'pretty_version' => '3.1.6.3',
+    'version' => '3.1.6.3',
     'reference' => NULL,
     'type' => 'library',
     'install_path' => __DIR__ . '/../',

@@ -21,7 +21,7 @@ class VersionLoaderCest
         $I->assertEquals([
             '2.0.0.1' => 'PublishPress\DompdfDompdf\initialize2Dot0Dot0Dot1',
             '2.0.0.2' => 'PublishPress\DompdfDompdf\initialize2Dot0Dot0Dot2',
-            '3.1.6.2' => 'PublishPress\DompdfDompdf\initialize3Dot1Dot6Dot2',
+            '3.1.6.3' => 'PublishPress\DompdfDompdf\initialize3Dot1Dot6Dot3',
         ], $registeredVersions);
     }
 
@@ -31,7 +31,7 @@ class VersionLoaderCest
 
         $latestVersion = $loader->latestVersion();
 
-        $I->assertEquals('3.1.6.2', $latestVersion);
+        $I->assertEquals('3.1.6.3', $latestVersion);
     }
 
     public function testLatestVersionCallbackIsTheLastOne(IntegrationTester $I)
@@ -40,7 +40,7 @@ class VersionLoaderCest
 
         $latestVersionCallback = $loader->latestVersionCallback();
 
-        $I->assertEquals('PublishPress\DompdfDompdf\initialize3Dot1Dot6Dot2', $latestVersionCallback);
+        $I->assertEquals('PublishPress\DompdfDompdf\initialize3Dot1Dot6Dot3', $latestVersionCallback);
     }
 
     public function testInitializeLatestVersion(IntegrationTester $I)
@@ -51,7 +51,7 @@ class VersionLoaderCest
 
         $I->assertTrue(class_exists('PublishPress\Dompdf\Dompdf'));
 
-        $didAction = (bool)did_action('publishpress_dompdf_dompdf_3Dot1Dot6Dot2_initialized');
+        $didAction = (bool)did_action('publishpress_dompdf_dompdf_3Dot1Dot6Dot3_initialized');
         $I->assertTrue($didAction);
     }
 }
