@@ -19,6 +19,7 @@ lib/dompdf/php-svg-lib/README.md export-ignore
 lib/masterminds/html5/README.md export-ignore
 lib/masterminds/html5/RELEASE.md export-ignore
 lib/masterminds/html5/UPGRADING.md export-ignore
+lib/masterminds/html5/bin export-ignore
 lib/sabberworm/php-css-parser/CHANGELOG.md export-ignore
 lib/sabberworm/php-css-parser/README.md export-ignore
 README.md export-ignore
